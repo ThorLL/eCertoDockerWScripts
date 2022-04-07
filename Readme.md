@@ -43,3 +43,6 @@ root/
 ### Rebuild Script Guide
 1. Navigate to the `'root'/scripts` folder within powershell
 2. Drag the script you wish to run into the powershell window
+
+### Future release features:
+- rebuild API independent of database
