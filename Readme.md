@@ -1,6 +1,6 @@
 # eCerto Distributed System In Docker Containers With Scripts
 ## Contents
-> Scrips
+> Scripts
 
 > Requirements
 >> Software
