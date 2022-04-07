@@ -30,7 +30,7 @@ cd ..
 cd PO
 docker-compose up --detach
 echo "Waiting for containers to be ready"
-for ($i=20;$i-gt0;$i--){
+for ($i=30;$i-gt0;$i--){
 	echo "Ready in $i"
 	Start-Sleep -s 1
 }
