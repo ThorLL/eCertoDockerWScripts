@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:            
+    COdb:
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        environment:
+            - "ACCEPT_EULA=Y"
+            - "SA_PASSWORD=6RHHShkc#Pya57Qx9"
+        container_name: mssqlCO
+        ports:
+            - "1434:1433"
+    COapi:
+        image: coapi
+        depends_on: 
+            - COdb
+        container_name: totalPriceAPICO
+        ports:
+            - "5078:80"
+            - "7209:443"
+    COweb:
+        image: coweb
+        depends_on: 
+            - COapi
+        container_name: totalPriceWEBCO
+        ports:
+            - "8081:8081"
