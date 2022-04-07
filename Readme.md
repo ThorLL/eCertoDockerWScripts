@@ -27,8 +27,8 @@ root/
 ┠╾╾╾ Readme.txt
 ┠╾╾╾ Scripts/
 ┠╾╾╾ CO/
-┃    ┠╾╾╾ Total-Price-API/ (api repo branch)
-┃    ┖╾╾╾ Total-Price-Web/ (web repo branch)
+┃    ┠╾╾╾ Total-Price-API/ (api repo CO branch)
+┃    ┖╾╾╾ Total-Price-Web/ (web repo CO branch)
 ┖╾╾╾ PO/
      ┠╾╾╾ Total-Price-API/ (api repo PO branch)
      ┖╾╾╾ Total-Price-Web/ (web repo PO branch)
