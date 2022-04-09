@@ -1,13 +1,11 @@
 # eCerto Distributed System In Docker Containers With Scripts
 ## Contents
 > Scripts
-
 > Requirements
 >> Software
-
 >> Project structure
-
 > Guide
+
 ### Scripts
 In the `scripts` folder you will find five scripts:
 - `Setup.ps1`
