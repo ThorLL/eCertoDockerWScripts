@@ -5,8 +5,8 @@
 > Requirements
 
 >> Software
->> Project structure
 
+>> Project structure
 
 > Guide
 
