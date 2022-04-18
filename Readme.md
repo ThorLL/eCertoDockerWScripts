@@ -38,7 +38,7 @@ root/
 
 ### Setup Script Guide
 1. Clone the 4 repositories into their respective folder
-2. PowerNavigate to the `'root'/scripts` folder
+2. Open Powershell and navigate to the `'root'/scripts` folder
 3. Drag the `Setup.ps1` into the powershell window to run it
 4. You should now see all four web pages (Front-ends and swagger APIs)
 
