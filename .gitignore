@@ -4,3 +4,7 @@ CO/*
 !PO/._
 
 Scripts/._Setup.ps1
+Scripts/._Rebuild CO API.ps1
+Scripts/Pathingfiles/CO/._docker-compose.yml
+Scripts/Pathingfiles/CO/Web/._Dockerfile
+Scripts/Pathingfiles/PO/._docker-compose.yml
