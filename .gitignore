@@ -8,3 +8,7 @@ Scripts/._Rebuild CO API.ps1
 Scripts/Pathingfiles/CO/._docker-compose.yml
 Scripts/Pathingfiles/CO/Web/._Dockerfile
 Scripts/Pathingfiles/PO/._docker-compose.yml
+Scripts/._RebuildCOAPI.ps1
+Scripts/._RebuildCOWeb.ps1
+Scripts/._RebuildPOAPI.ps1
+Scripts/._RebuildPOWeb.ps1

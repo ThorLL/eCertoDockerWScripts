@@ -1,26 +1,26 @@
 version: '3.4'
 
 services:            
-    POdb:
+    podb:
         image: mcr.microsoft.com/mssql/server:2017-latest
         environment:
             - "ACCEPT_EULA=Y"
             - "SA_PASSWORD=6RHHShkc#Pya57Qx9"
-        container_name: mssqlPO
+        container_name: mssqlpo
         ports:
             - "1434:1433"
-    POapi:
+    poapi:
         image: poapi
         depends_on: 
-            - POdb
-        container_name: totalPriceAPIPO
+            - podb
+        container_name: totalPriceAPIpo
         ports:
             - "5077:80"
-            - "7208:443"
-    POweb:
+            - "7209:443"
+    poweb:
         image: poweb
         depends_on: 
-            - POapi
-        container_name: totalPriceWEBPO
+            - poapi
+        container_name: totalPriceWEBpo
         ports:
             - "8080:8080"

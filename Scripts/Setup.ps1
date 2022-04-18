@@ -1,12 +1,28 @@
 cd..
+echo "Stopping CO services"
+docker stop totalPriceAPIco
+docker stop mssqlco
+docker stop totalPriceWEBco
+echo "Removing CO services"
+docker rm mssqlco
+docker rm totalPriceAPIco
+docker rm totalPriceWEBco
+echo "Stopping PO services"
+docker stop totalPriceAPIpo
+docker stop mssqlpo
+docker stop totalPriceWEBpo
+echo "Stopping PO services"
+docker rm totalPriceWEBpo
+docker rm mssqlpo
+docker rm totalPriceAPIpo
 echo "Pasting dockerignore files"
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\.dockerignore" -Destination "$pwd\CO\total-price-api" -Recurse
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\.dockerignore" -Destination "$pwd\CO\total-price-web" -Recurse
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\.dockerignore" -Destination "$pwd\PO\total-price-api" -Recurse
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\.dockerignore" -Destination "$pwd\PO\total-price-web" -Recurse
 echo "Pasting docker-compose files"
-Copy-Item -Path "$pwd\Scripts\Pathingfiles\co\docker-compose.yml" -Destination "$pwd\PO" -Recurse
-Copy-Item -Path "$pwd\Scripts\Pathingfiles\po\docker-compose.yml" -Destination "$pwd\CO" -Recurse
+Copy-Item -Path "$pwd\Scripts\Pathingfiles\co\docker-compose.yml" -Destination "$pwd\CO" -Recurse
+Copy-Item -Path "$pwd\Scripts\Pathingfiles\po\docker-compose.yml" -Destination "$pwd\PO" -Recurse
 echo "Pasting Dockerfile"
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\co\API\Dockerfile" -Destination "$pwd\co\total-price-api" -Recurse
 Copy-Item -Path "$pwd\Scripts\Pathingfiles\po\API\Dockerfile" -Destination "$pwd\po\total-price-api" -Recurse
