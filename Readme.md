@@ -13,10 +13,10 @@
 ### Scripts
 In the `scripts` folder you will find five scripts:
 - `Setup.ps1`
-- `Rebuild CO API.ps1` (Will reset your password in the database)
-- `Rebuild PO API.ps1` (Will reset your password in the database)
-- `Rebuild CO Web.ps1`
-- `Rebuild PO Web.ps1`
+- `RebuildCOAPI.ps1` (Will reset your password in the database)
+- `RebuildPOAPI.ps1` (Will reset your password in the database)
+- `RebuildCOWeb.ps1`
+- `RebuildPOWeb.ps1`
 ### Requirements
 #### Software
 Required software includes:
